@@ -30,6 +30,7 @@ namespace FishStore
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
+            //Below is part of the auth
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
